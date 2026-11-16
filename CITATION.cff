@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this page, please cite it as below."
+title: "The trees of science"
+type: software
+abstract: "A web page that shows four classifications of science as trees that can be expanded, collapsed and searched."
+authors:
+  - family-names: Liaskos
+    given-names: Alexandros
+repository-code: "https://github.com/AlexandrosLiaskos/science-trees"
+url: "https://liaskos.nkua.cloud/trees/"
+license: AGPL-3.0-only
+keywords:
+  - classification
+  - MSC2020
+  - PhySH
+  - ACM CCS
+  - ANZSRC

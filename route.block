@@ -1,0 +1,15 @@
+    location = /trees {
+      return 308 /trees/;
+    }
+
+    location ^~ /trees/ {
+      set $science_trees http://science-trees:80;
+      rewrite ^/trees/(.*)$ /$1 break;
+      proxy_pass $science_trees;
+      proxy_http_version 1.1;
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-Proto $scheme;
+      proxy_set_header X-Forwarded-Host $host;
+      proxy_redirect off;
+    }
+

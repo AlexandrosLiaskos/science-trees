@@ -1,0 +1,14 @@
+services:
+  science-trees:
+    image: nginx:1.27-alpine
+    container_name: science-trees
+    restart: unless-stopped
+    volumes:
+      - /opt/science-trees/site:/usr/share/nginx/html:ro
+      - /opt/science-trees/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - nkua-proxy
+
+networks:
+  nkua-proxy:
+    external: true

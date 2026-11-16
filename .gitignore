@@ -1,0 +1,6 @@
+# Files of the server folder that are not part of this repository (see README.md)
+/index.html.before-visit-counter-*
+
+# Python
+__pycache__/
+*.py[cod]
